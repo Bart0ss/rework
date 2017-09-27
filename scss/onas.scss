@@ -1,0 +1,126 @@
+.about-us-content
+{
+
+    font-family: 'Open Sans';
+	
+	
+	#abttext
+	{
+		@media screen and (max-width: 768px) 
+		{
+			height: 950px;
+		}
+		padding-top: 50px;
+		grid-area: abttext;
+
+	}
+	#abtimg
+	{
+		margin-top: 45px;
+		grid-area: abtimg;
+	}
+	
+	
+	@media screen and (max-width: 768px) 
+	{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 400px;
+		grid-gap: 30px;
+		grid-template-areas:
+		" abttext "
+		" abtimg"; 
+		
+	}
+	
+	@media screen and (min-width: 768px) 
+	{
+		display: grid;
+		grid-template-columns: 15% 35% 5% 25%;
+		grid-template-rows: 400px;
+		grid-template-areas:
+		" ..... abttext ..... abtimg"; 
+	}
+
+  
+}
+
+.about-us-zastepcze
+{
+
+    font-family: 'Open Sans';
+	
+	
+	#abttext
+	{
+		@media screen and (max-width: 768px) 
+		{
+			height: 950px;
+		}
+		padding-top: 50px;
+		grid-area: abttext;
+
+	}
+	#abtimg
+	{
+		margin-top: 45px;
+		grid-area: abtimg;
+	}
+	
+	
+	@media screen and (max-width: 768px) 
+	{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 400px;
+		grid-gap: 30px;
+		grid-template-areas:
+		" abttext "
+		" abtimg"; 
+		
+	}
+	
+	@media screen and (min-width: 768px) 
+	{
+		display: grid;
+		grid-template-columns: 15% 35% 5% 25%;
+		grid-template-rows: 400px;
+		grid-template-areas:
+		" ..... abttext ..... abtimg"; 
+	}
+
+  
+}
+
+.blacktext
+{
+	color: black;
+}
+
+.counter-background{
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .counter{
+        max-width: 1100px;
+        font-size: 17px;
+        p{
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+        span{
+            font-size: 45px;
+            color: #4380C1;
+        }
+    }
+}
+
+.about-us-slider{
+	margin-top: 50px;
+    padding-bottom: 50px;
+    .about-us-first-slide{
+        background-image: url(../img/4.jpg);
+        background-size: cover;
+        height: 300px;
+    }
+}

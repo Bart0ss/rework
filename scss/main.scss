@@ -1,0 +1,106 @@
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "cennik.scss";
+@import "kontakt.scss";
+@import "onas.scss";
+
+@media (max-width: 1100px){
+    body{
+        padding-top: 45px;
+        transition: .5s;
+    }
+    header .header-top-bar{
+        width: 100%;
+        ul{
+            display: block;
+            padding: 10px 0;
+            margin-bottom: 0;
+            
+            li{
+                display: block;
+                text-align: left;
+                padding: 5px 15px;
+                line-height: 20px;
+            }
+        }
+        position: absolute;
+        top: 0;
+        transform: translateY(calc(-100% + 45px));
+        transition: .5s;
+        
+        &.visible{
+            transform: translateY(0);
+            .mobile-toggle-arrow{
+                transform: rotate(180deg);
+            }
+        }
+        
+        .mobile-toggle-arrow{
+            display: block;
+            background-color: rgb(245,245,245);
+            height: 45px;
+            cursor: pointer;
+            line-height: 45px;
+            width: 100%;
+        }
+    }
+    header .header-container{
+        .menu-container{
+            ul{
+                padding-left: 0;
+            }
+        }
+    }
+    .mobile-menu-switch{
+        line-height: 65px;
+        float: right;
+        img{
+            cursor: pointer;
+        }
+    }
+    .menu-container{
+        float: none!important;
+    }
+    .main-menu{
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 0;
+        &.open{
+            margin: 0 auto;
+            height: auto;
+            width: 100%;
+            background-color: rgb(245,245,245);
+            margin-bottom: 15px;
+        }
+        li{
+            margin-right: 0!important;
+            display: block!important;
+            border-bottom: 1px solid white;
+            padding: 0!important;
+            a{
+				color: red;
+                line-height: 50px;
+                display: block;
+            }
+            &:hover, 
+            &.active{
+                background-color: #337ab7;
+                a{
+                    color: white!important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1100px){
+    body{
+        padding-top: 0 !important;
+    }
+    .mobile-toggle-arrow,
+    .mobile-menu-switch{
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 417 416" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-47.9625,-48)">
+        <g>
+            <g>
+                <g>
+                    <circle cx="256" cy="88" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="256" cy="424" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="424" cy="256" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="88" cy="256" r="8" style="fill:rgb(178,182,190);"/>
+                </g>
+                <g>
+                    <circle cx="110.5" cy="172" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="401.5" cy="340" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="340" cy="110.5" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="172" cy="401.5" r="8" style="fill:rgb(178,182,190);"/>
+                </g>
+                <g>
+                    <circle cx="110.5" cy="340" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="401.5" cy="172" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="172" cy="110.5" r="8" style="fill:rgb(178,182,190);"/>
+                    <circle cx="340" cy="401.5" r="8" style="fill:rgb(178,182,190);"/>
+                </g>
+                <path d="M269.9,248C267,243 261.8,240.2 256.5,240L226.5,184.6C224.2,180.8 219.3,179.6 215.5,181.9C211.7,184.2 210.5,189.1 212.8,192.9L242.4,247.8C239.5,252.6 239.2,258.9 242.2,264.1C243.7,266.6 245.7,268.6 248.1,269.9L248.1,384C248.1,388.4 251.7,392 256.1,392C260.5,392 264.1,388.4 264.1,384L264.1,269.9C271.7,265.4 274.3,255.7 269.9,248Z" style="fill:rgb(178,182,190);fill-rule:nonzero;"/>
+            </g>
+            <path d="M403.1,108.9C321.9,27.7 190.2,27.7 108.9,108.9C27.6,190.1 27.7,321.8 108.9,403.1C190.1,484.3 321.8,484.3 403.1,403.1C484.3,321.9 484.3,190.1 403.1,108.9ZM390.8,390.8C316.5,465.1 195.5,465.1 121.2,390.8C46.9,316.5 46.9,195.5 121.2,121.2C195.5,46.9 316.5,46.9 390.8,121.2C465.2,195.5 465.2,316.5 390.8,390.8Z" style="fill:rgb(178,182,190);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

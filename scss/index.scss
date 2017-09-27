@@ -1,0 +1,250 @@
+body{
+    text-align: center;
+    font-family: 'Open Sans';
+    #slider
+	{
+		#slidertext
+		{
+			font-weight: bold;
+			color: white;
+			padding-top: 12vw;
+		}
+
+        height: 600px;
+        background-size: cover;
+        text-transform: uppercase;
+
+        }
+    }
+	
+    .contact-phone{
+        background-color: #F5F5F5;
+        padding: 50px;
+        text-transform: uppercase;
+        h3{
+            display: inline;
+            font-size: 22px;
+            line-height: 34px;
+            letter-spacing: 1px;
+            margin-right: 1em;
+        }
+        .phone-number{
+            display: inline;
+            font-size: 22px;
+            line-height: 34px;
+            letter-spacing: 1px;
+            margin-right: 1em;
+            @media (max-width: 1100px){
+                display: none;
+            }
+        }
+
+        .blue-button{
+            display: inline;
+            a{
+                color: white;
+                background-color: black;
+                line-height: 34px;
+                padding: 15px 30px;
+                letter-spacing: 1px;
+                font-size: 14px;
+                &:hover{
+                    text-decoration: none;
+                    background-color: #1A5DA2;
+                    transition: all 0.2s ease 0s;
+                }
+            }
+        }
+        
+        .only-mobile-button{
+            display: none;
+        }
+        
+        @media (max-width: 1100px){
+            padding-top: 25px;
+            h3{
+                margin-right: 0;
+                display: block;
+                padding-bottom: 30px;
+            }
+            .blue-button{
+                display: block;
+            }
+        }
+    }
+    .why-we{
+        padding: 50px;
+        font-family: 'Open Sans';
+        
+        @media (max-width: 1100px){
+            padding: 50px 15px;
+        }
+        h3{
+            color: #333;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            &:after{
+                text-align: center;
+                display: inline-block;
+                content: "";
+                background: #1E69B8;
+                width: 50px;
+                height: 2px;
+            }
+        }
+        .up-content{
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 32px;
+            color: #777;
+        }
+        p{
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #777;
+            
+        }
+        
+        .we-ico{
+            padding: 50px 20px;
+            img{ 
+                height: 130px;
+            }
+            h6{
+                padding-top: 20px;
+                padding-bottom: 25px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                &:after{
+                    text-align: center;
+                    display: inline-block;
+                    content: "";
+                    background: #1E69B8;
+                    width: 40px;
+                    height: 2px;
+                }
+            }
+        }
+        
+        .blue-button{
+            display: inline;
+            a{
+                text-transform: uppercase;
+                color: white;
+                background-color: black;
+                line-height: 34px;
+                padding: 19px 20px;
+                letter-spacing: 1px;
+                font-size: 14px;
+                &:hover{
+                    text-decoration: none;
+                    background-color: #1A5DA2;
+                    transition: all 0.2s ease 0s;
+                }
+            }
+        }
+    }
+    .chosen-price-background{
+        background-color: #F6F6F6;
+        padding-top: 10px;
+    }
+    .chosen-price{
+        padding-top: 60px;
+        padding-bottom: 50px;
+        .price-foto{
+            padding-bottom: 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .price-info{
+            margin-top: -20px;
+            padding: -15px 15px;
+            & > .row {
+                margin-left: -30px;
+                margin-right: -30px;
+            }
+            h3{
+                font-size: 36px;
+                text-transform: uppercase;
+                &:after{
+                    text-align: center;
+                    display: inline-block;
+                    content: "";
+                    background: #1E69B8;
+                    width: 80px;
+                    height: 2px;
+                }
+            }
+            p{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #777;
+            }
+            
+            .services{
+               padding-bottom: 5px; 
+                .service-tick {
+                    padding-right: 0;
+                    img{
+                        width: 16px;
+                        float: right;
+                        margin-top: 3px;
+                    }
+                }
+                .service-content{
+                    text-align: left;
+                }
+                .service-price{
+                    text-align: right;
+                    font-weight: bold;
+                }
+                
+                @media (max-width: 1100px){
+                    padding-bottom: 10px;
+                    .service-tick{
+                        img{
+                            margin-right: -5px;
+                        }
+                    }
+                    .service-price{
+                        padding-left: 0;
+                        padding-right: 10px;
+                    }
+                }   
+            }
+        }
+        
+    }
+
+.white-button{
+    display: block;
+    border: 1px solid #ddd;
+    width: 160px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    background-color: #F6F6F6;
+    transition: all .5s;
+    padding: 15px 30px;
+    a{
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover{
+        background-color: #337ab7;
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

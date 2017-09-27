@@ -2,22 +2,47 @@ header{
     text-align: center;
 	.header-top-box
 	{
-		margin-top: 15px;
 		#object1
 		{
 			grid-area: obj1;
 		}
-		
+
 		#object2
 		{
 			grid-area: obj2;
 		}
-		
-		display: grid;
-		grid-template-columns: 10% 30% 20% 25%;
-		grid-template-areas:
-		"..... obj1  .... obj2";
-		font-size: 25px;
+		@media screen and (min-width: 768px) 
+		{
+			margin-top: 15px;
+
+
+			display: grid;
+			grid-template-columns: 10% 30% 20% 25%;
+			grid-template-areas:
+			"..... obj1  .... obj2";
+			font-size: 25px;
+		}
+		.fa-phone
+		{
+			background-color: black;
+			color: yellow;
+			font-size: 30px;
+			border: 2px solid;
+			border-radius: 25px;
+			border-color: black;
+		}
+		@media screen and (max-width: 768px) 
+		{
+			margin-top: 15px;
+
+
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-areas:
+				"obj1"
+				"obj2";
+			font-size: 25px;
+		}
 		.fa-phone
 		{
 			background-color: black;
@@ -86,35 +111,86 @@ header{
     
     .header-container
 	{
-        padding-top: 5px;
-        max-width: 1070px;
-		display: grid;
-		font-weight: bold;
-		grid-template-columns: 20% 16% 13% 13% 10% 10% 10% 10%;
-		grid-gap: 15px;
+		
 
-		grid-template-areas:
-		" logo ... msg1 msg2 msg3 msg4 msg5 msg6";
-		
-        .logo-container
+		@media screen and (max-width: 768px) 
 		{
-			grid-area: logo;
-            float: left;
-			padding-top: 10px;
-            padding-left: 0;
-            max-width: calc(100% - 32px);
-            img
+			padding-top: 5px;
+			max-width: 1070px;
+			display: grid;
+			font-weight: bold;
+			grid-template-columns: 100%;
+			grid-template-rows: 100px;
+			grid-gap: 15px;
+
+			grid-template-areas:
+				" logo "
+				"msg1"
+				"msg2"
+				"msg3"
+				"msg4"
+				"msg5"
+				"msg6";
+
+			.logo-container
 			{
-                height: 35px;
-                max-width: 100%;
-            }
-        }
-		
-		a
-		{
-			padding-top: 20px;
+				grid-area: logo;
+				float: left;
+					@media screen and (max-width: 768px) 
+				{
+					position:relative;
+					top: 50px;
+					left: 25px;
+				}
+				padding-top: 10px;
+				padding-left: 0;
+				max-width: calc(100% - 32px);
+				img
+				{
+					height: 35px;
+					max-width: 100%;
+				}
+			}
+
+			a
+			{
+				padding-top: 20px;
+			} 
+
 		}
-		
+
+		@media screen and (min-width: 768px) 
+		{
+		    padding-top: 5px;
+			max-width: 1070px;
+			display: grid;
+			font-weight: bold;
+			grid-template-columns: 20% 16% 13% 13% 10% 10% 10% 10%;
+			grid-gap: 15px;
+
+			grid-template-areas:
+			" logo ... msg1 msg2 msg3 msg4 msg5 msg6";
+
+			.logo-container
+			{
+				grid-area: logo;
+				float: left;
+				padding-top: 10px;
+				padding-left: 0;
+				max-width: calc(100% - 32px);
+				img
+				{
+					height: 35px;
+					max-width: 100%;
+				}
+			}
+
+			a
+			{
+				padding-top: 20px;
+			}
+		}
+
 		.msg1
 		{
 			grid-area: msg1;

@@ -32,29 +32,41 @@ function core()
 	);
 }
 
-function initialize() 
+var isShown;
+
+if($( window ).width() >= 769)
 {
-	var mapCanvas = document.getElementById('map');
-	var mapOptions = {
-	center: new google.maps.LatLng(50.123655,18.97851),
-	disableDefaultUI: true,
-    title: 'autocentrum',
-	zoom: 17,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	}
-    
-    var marker = new google.maps.Marker({
-        position: {lat: 50.123655, lng: 18.97851},
-        zoom: 15,
-        map: map,
-        title: 'autocentrum'
-    });
-    
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    marker.setMap(map);
+	isShown=false;
+}
+else
+{
+	isShown=true;
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+function parse()
+{
+	if (!isShown)
+	{
+		var cusid_ele = document.getElementsByClassName('menuitems');
+		for (var i = 0; i < cusid_ele.length; ++i) 
+		{
+			var item = cusid_ele[i];  
+			item.style.display = "inherit";
+		}
+		isShown=true;
+	}
+	else
+	{
+		var cusid_ele = document.getElementsByClassName('menuitems');
+		for (var i = 0; i < cusid_ele.length; ++i) 
+		{
+			var item = cusid_ele[i];  
+			item.style.display = "none";
+		}
+		isShown=false;
+	}
+}
+
 
 
 

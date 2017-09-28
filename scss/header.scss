@@ -14,8 +14,6 @@ header{
 		@media screen and (min-width: 768px) 
 		{
 			margin-top: 15px;
-
-
 			display: grid;
 			grid-template-columns: 10% 30% 20% 25%;
 			grid-template-areas:
@@ -33,15 +31,16 @@ header{
 		}
 		@media screen and (max-width: 768px) 
 		{
+			position: relative;
+			top: -25px;
 			margin-top: 15px;
-
-
 			display: grid;
 			grid-template-columns: 100%;
 			grid-template-areas:
 				"obj1"
 				"obj2";
 			font-size: 25px;
+			grid-gap: 20px;
 		}
 		.fa-phone
 		{
@@ -111,109 +110,116 @@ header{
     
     .header-container
 	{
-		
-
-		@media screen and (max-width: 768px) 
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+			"logo-container "
+			"switch";
+		.logo-container
 		{
-			padding-top: 5px;
-			max-width: 1070px;
-			display: grid;
-			font-weight: bold;
-			grid-template-columns: 100%;
-			grid-template-rows: 100px;
-			grid-gap: 15px;
-
-			grid-template-areas:
-				" logo "
-				"msg1"
-				"msg2"
-				"msg3"
-				"msg4"
-				"msg5"
-				"msg6";
-
-			.logo-container
-			{
-				grid-area: logo;
-				float: left;
-					@media screen and (max-width: 768px) 
-				{
-					position:relative;
-					top: 50px;
-					left: 25px;
-				}
-				padding-top: 10px;
-				padding-left: 0;
-				max-width: calc(100% - 32px);
-				img
-				{
-					height: 35px;
-					max-width: 100%;
-				}
-			}
-
-			a
-			{
-				padding-top: 20px;
-			} 
-
+			grid-area: logo-container;
 		}
-
-		@media screen and (min-width: 768px) 
+		.mobile-menu-switch
 		{
-		    padding-top: 5px;
-			max-width: 1070px;
-			display: grid;
-			font-weight: bold;
-			grid-template-columns: 20% 16% 13% 13% 10% 10% 10% 10%;
-			grid-gap: 15px;
-
-			grid-template-areas:
-			" logo ... msg1 msg2 msg3 msg4 msg5 msg6";
-
-			.logo-container
+			grid-area: switch;
+			position: relative;
+			top: 15px;
+			@media screen and (min-width: 768px) 
 			{
-				grid-area: logo;
-				float: left;
-				padding-top: 10px;
-				padding-left: 0;
-				max-width: calc(100% - 32px);
-				img
-				{
-					height: 35px;
-					max-width: 100%;
-				}
+				display: none;
 			}
 
-			a
+			@media screen and (max-width: 768px) 
 			{
-				padding-top: 20px;
+
 			}
 		}
 
-		.msg1
+		.menuitems
 		{
-			grid-area: msg1;
-		}
-		.msg2
-		{
-			grid-area: msg2;
-		}
-		.msg3
-		{
-			grid-area: msg3;
-		}
-		.msg4
-		{
-			grid-area: msg4;
-		}
-		.msg5
-		{
-			grid-area: msg5;
-		}
-		.msg6
-		{
-			grid-area: msg6;
+			@media screen and (max-width: 768px) 
+			{
+				padding-top: 5px;
+				display: grid;
+				font-weight: bold;
+				grid-template-columns: 100%;
+				grid-template-rows: 40px;
+				grid-gap: 15px;
+
+				grid-template-areas:
+					"msg1"
+					"msg2"
+					"msg3"
+					"msg4"
+					"msg5"
+					"msg6";
+
+				a
+				{
+					padding-top: 20px;
+					padding-bottom: 5px;
+					border-bottom-style: solid;
+					border-bottom-color: black;
+					border-bottom-width: 3px;
+				} 
+				a:hover
+				{
+					background-color: #333;
+					
+				}
+			}
+
+					
+			@media screen and (min-width: 768px) 
+			{
+				padding-top: 5px;
+				display: grid;
+				font-weight: bold;
+				grid-template-columns:  13% 13% 15% 15% 10% 10%;
+				grid-gap: 15px;
+
+				grid-template-areas:
+				" msg1 msg2 msg3 msg4 msg5 msg6";
+
+				.logo-container
+				{
+					grid-area: logo;
+
+					img
+					{
+						height: 35px;
+					}
+				}
+
+				a
+				{
+					padding-top: 20px;
+				}
+			}
+				.msg1
+				{
+					grid-area: msg1;
+				}
+				.msg2
+				{
+					grid-area: msg2;
+				}
+				.msg3
+				{
+					grid-area: msg3;
+				}
+				.msg4
+				{
+					grid-area: msg4;
+				}
+				.msg5
+				{
+					grid-area: msg5;
+				}
+				.msg6
+				{
+					grid-area: msg6;
+				}
 		}
 	}
     

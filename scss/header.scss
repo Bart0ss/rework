@@ -139,6 +139,7 @@ header{
 		{
 			@media screen and (max-width: 768px) 
 			{
+				
 				padding-top: 5px;
 				display: grid;
 				font-weight: bold;
@@ -154,10 +155,6 @@ header{
 					"msg5"
 					"msg6";
 
-				a
-				{
-
-				} 
 				a:hover
 				{
 					background-color: orange;

@@ -60,19 +60,20 @@
 
 .about-us-zastepcze
 {
-
     font-family: 'Open Sans';
-	
 	display: block;
 	#abttext
 	{
-
+		width: 80%;
+		margin: 25px auto;
+		text-align: center;
+		display:block;
 		@media screen and (max-width: 320px) and (min-width: 280px)
 		{
 			height: 450px;
 		}
 
-		padding-top: 30px;
+
 		grid-area: abttext;
 	}
 	#abtimg
@@ -98,7 +99,7 @@
 	{
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 400px;
+		grid-template-rows: 300px;
 		grid-gap: 20px;
 		grid-template-areas:
 		" abttext "
@@ -110,13 +111,10 @@
 	{
 		display: grid;
 		grid-template-columns: 15% 35% 5% 35%;
-		grid-template-rows: 700px;
+		grid-template-rows: 400px;
 		grid-template-areas:
 		" ..... abttext ..... abtimg"; 
 	}
-
-
-  
 }
 
 .blacktext
@@ -143,7 +141,7 @@
 }
 
 .about-us-slider{
-	margin-top: 50px;
+	background-color: #F1F1F1;
     padding-bottom: 50px;
     .about-us-first-slide{
         background-image: url(../img/4.jpg);

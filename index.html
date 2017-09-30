@@ -33,14 +33,12 @@
 	  </div>
     </div>
     
-    <div class="header-container container">
-        <div class="logo-container" onClick="url()">
-            <img width="100%" src="img/logoblack.png">
-        </div>
-			<div class="mobile-menu-switch" onclick="parse()">
-				<img src="img/hamburger.png">
-			</div>
+    <div class="header-container">
+		<div class="mobile-menu-switch" onclick="parse()">
+			<img src="img/hamburger.png">
+		</div>
 		<div class="menuitems">
+			<img class="logo-container" width="300px" src="img/logoblack.png" onClick="url()">
 			<a href="index.html" class="msg1 styling"><font color="black">Pomoc Drogowa</font></a>
 			<a href="onas.html" class="msg2 styling"><font color="black">Likwidacja Szkód</font></a>
 			<a href="zastepcze.html" class="msg3 styling"><font color="black">Auto zastępcze</font></a>
@@ -55,12 +53,13 @@
     
 	
 	<!-- start slider -->
-		<div id="slider" onClick="gotoNext()">
+	<div id="slider" onClick="gotoNext()">
+
+			<h3 id="slidertext"></h3>
+
+	</div>
+	<!-- end slider -->
 	
-				<h3 id="slidertext"></h3>
-	
-		</div>
-<!-- end slider -->
 	<script>
 			window.setInterval
 			(

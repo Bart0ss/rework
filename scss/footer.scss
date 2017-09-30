@@ -14,10 +14,9 @@ body{
         
         .footer-bg{
             text-align: center;
-            background-color: black;
+            background-color: #2D2E32;
             color: white;
             .footer-content{
-                max-width: 1200px;
                 
                 @media (max-width: 767px){
                     padding-top: 5px;

@@ -5,7 +5,7 @@ function  url()
 {
 	window.location.href = "index.html";
 }
-
+/*
 function setValues(value)
 {
 	document.getElementById("counter").innerHTML = "<font color='black'>" + value + "%" + '</font>';
@@ -13,9 +13,8 @@ function setValues(value)
 	document.getElementById("counter2").innerHTML = "<font color='black'>" + value + "%" + '</font>';
 	document.getElementById("counter3").innerHTML = "<font color='black'>" + value + "%" + '</font>';
 }
-var index = 0;
+var index = 55;
 
-core();
 function core()
 {		
 	window.setInterval
@@ -31,6 +30,9 @@ function core()
 		}, 30
 	);
 }
+*/
+
+
 
 var isShown;
 

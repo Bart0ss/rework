@@ -1,5 +1,6 @@
 header{
-    text-align: center;
+	
+	text-align: center;
 	.header-top-box
 	{
 		background-color: #F1F1F1;
@@ -17,25 +18,13 @@ header{
 			height: 45px;
 			padding-top: 5px;
 			display: grid;
-			grid-template-columns: 30% 40% 30%;
+			grid-template-columns: 50% 10% 40%;
 			grid-template-areas:
 			" obj1  .... obj2";
-			font-size: 25px;
-		}
-		.fa-phone
-		{
-			background-color: black;
-			color: yellow;
-			font-size: 30px;
-			border: 2px solid;
-			border-radius: 25px;
-			border-color: black;
+			font-size: 18px;
 		}
 		@media screen and (max-width: 768px) 
 		{
-			position: relative;
-			top: -25px;
-			margin-top: 15px;
 			display: grid;
 			grid-template-columns: 100%;
 			grid-template-areas:
@@ -62,18 +51,21 @@ header{
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-areas: 
-		"logo-container "
-		"switch";
+		"switch"
+		"menuitems";
 	
 	.logo-container
 	{
 		grid-area: logo-container;
 	}
+	.menuitems
+	{
+		grid-area:menuitems;
+	}
 	.mobile-menu-switch
 	{
 		grid-area: switch;
-		position: relative;
-		top: 15px;
+		
 		@media screen and (min-width: 768px) 
 		{
 			display: none;
@@ -89,28 +81,58 @@ header{
 	{
 		@media screen and (max-width: 768px) 
 		{
-			padding-top: 5px;
 			display: grid;
 			font-weight: bold;
 			grid-template-columns: 100%;
-			grid-template-rows: 20px;
-			grid-gap: 15px;
-
+			grid-template-rows: 30px;
+			grid-gap: 25px;
 			grid-template-areas:
+				"logo"
+				"...."
 				"msg1"
 				"msg2"
 				"msg3"
 				"msg4"
 				"msg5"
-				"msg6";
+				"msg6"
+				"....";
 
 			a:hover
 			{
 				background-color: orange;
 			}
 		}
+		
+		@media screen and (min-width: 768px) and (max-width: 1000px) 
+		{
+			display: grid;
+			font-weight: bold;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 30px;
+			grid-gap: 25px;
+			grid-template-areas:
+				"logo logo"
+				".... ...."
+				".... ...."
+				".... ...."
+				".... ...."
+				".... ...."
+				"msg1 msg2"
+				"msg3 msg4"
+				"msg5 msg6"
+				".... ....";
+			.logo-container
+			{
+				width: 96%;
+
+			}
+			a:hover
+			{
+				background-color: orange;
+			}
+		}
 					
-		@media screen and (min-width: 768px) 
+		@media screen and (min-width: 1000px) 
 		{
 			margin-top: 15px;
 			margin-bottom: 15px;
@@ -121,8 +143,6 @@ header{
 				".... logo .... msg1 msg2 msg3 msg4 msg5 msg6";
 			.logo-container
 			{
-				grid-area: logo;
-				
 				img
 				{
 					height: 35px;
@@ -133,10 +153,23 @@ header{
 			{
 				padding-top: 20px;
 			}
+			
+			a:hover
+			{
+				background-color: orange;
+			}
 		}
+			.logo-container
+			{
+				grid-area: logo;
+				@media screen and (max-width: 768px) 
+				{
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
 			.styling
 			{	
-				margin-left: 50px;
 			}
 			.msg1
 			{

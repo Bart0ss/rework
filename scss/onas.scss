@@ -1,119 +1,41 @@
-.about-us-content
-{
 
-    font-family: 'Open Sans';
-	
-	display: block;
-	#abttext
-	{
-
-		@media screen and (max-width: 320px) and (min-width: 280px)
-		{
-			height: 450px;
-		}
-
-		padding-top: 30px;
-		grid-area: abttext;
-	}
-	#abtimg
-	{
-		@media screen and (max-width: 320px) and (min-width: 280px)
-		{
-			margin-top: 220px;
-		}
-
-		@media screen and (max-width: 420px) and (min-width: 320px)
-		{
-			margin-top: 120px;
-		}
-		@media screen and (min-width: 768px) 
-		{
-			padding-top: 40px;
-		}
-		grid-area: abtimg;
-	}
-	
-	
-	@media screen and (max-width: 768px) 
-	{
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: 400px;
-		grid-gap: 20px;
-		grid-template-areas:
-		" abttext "
-		" abtimg"; 
-		
-	}
-	
-	@media screen and (min-width: 768px) 
-	{
-		display: grid;
-		grid-template-columns: 15% 35% 5% 35%;
-		grid-template-rows: 700px;
-		grid-template-areas:
-		" ..... abttext ..... abtimg"; 
-	}
-
-  
-}
 
 .about-us-zastepcze
 {
     font-family: 'Open Sans';
 	display: block;
+	
+	
 	#abttext
 	{
-		width: 80%;
+		width: 100%;
 		margin: 25px auto;
 		text-align: center;
 		display:block;
-		@media screen and (max-width: 320px) and (min-width: 280px)
-		{
-			height: 450px;
-		}
-
-
 		grid-area: abttext;
 	}
 	#abtimg
 	{
-		@media screen and (max-width: 320px) and (min-width: 280px)
-		{
-			margin-top: 220px;
-		}
-
-		@media screen and (max-width: 420px) and (min-width: 320px)
-		{
-			margin-top: 120px;
-		}
-		@media screen and (min-width: 768px) 
-		{
-			padding-top: 40px;
-		}
+		margin-top: 40px;
 		grid-area: abtimg;
-	}
-	
-	
-	@media screen and (max-width: 768px) 
-	{
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: 300px;
-		grid-gap: 20px;
-		grid-template-areas:
-		" abttext "
-		" abtimg"; 
-		
 	}
 	
 	@media screen and (min-width: 768px) 
 	{
 		display: grid;
-		grid-template-columns: 15% 35% 5% 35%;
-		grid-template-rows: 400px;
+		grid-template-columns: 57% 38%;
+		@media screen and (min-width: 768px) and (max-width: 1000px)
+		{
+			grid-template-rows: 410px;
+		}
+		@media screen and (min-width: 1001x) and (max-width: 1400px)
+		{
+			grid-template-rows: 350px;
+		}
+		
+		grid-gap: 25px;
 		grid-template-areas:
-		" ..... abttext ..... abtimg"; 
+		" abttext  abtimg"; 
 	}
 }
 

@@ -4,19 +4,19 @@
 {
     font-family: 'Open Sans';
 	display: block;
-	
+	margin-bottom: 25px;
 	
 	#abttext
 	{
-		width: 100%;
-		margin: 25px auto;
+		width: 95%;
+		margin: 5px auto;
 		text-align: center;
 		display:block;
 		grid-area: abttext;
 	}
 	#abtimg
 	{
-		margin-top: 40px;
+		margin-top: 20px;
 		grid-area: abtimg;
 	}
 	
@@ -63,6 +63,16 @@
 }
 
 .about-us-slider{
+	
+	@media screen and (max-width: 768px)
+	{
+		 max-width: 100%;
+	}
+	a
+	{
+		font-size: 0px;
+	}
+	padding-top: 30px;
 	background-color: #F1F1F1;
     padding-bottom: 50px;
     .about-us-first-slide{

@@ -3,12 +3,7 @@
 {	
 	font-size: 16px;
 	
-	
-	@media screen and (min-width: 280px) and (max-width: 400px)
-	{
-		height: 250px;
-	}
-	@media screen and (min-width: 400px) and (max-width: 768px)
+	@media screen and (min-width: 280px) and (max-width: 768px)
 	{
 		height: 150px;
 	}
@@ -42,7 +37,7 @@
 	@media screen and (min-width: 999px) and (max-width: 1400px)
 	{
 		height: 45px;
-		padding-top: 5px;
+		padding-top: 7px;
 		display: grid;
 		grid-template-columns: 30% 25% 45%;
 		grid-template-areas:

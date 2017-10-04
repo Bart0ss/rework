@@ -20,15 +20,77 @@
     }
 }
 
-.contactinfo
+.infokontakt
 {
-	max-width: 100%;
+	font-weight: bold;
+	
+	#box1
+	{
+		grid-area: box1;
+	}
+	#box2
+	{
+		grid-area: box2;
+	}
+	#box3
+	{
+		grid-area: box3;
+		@media screen and (min-width: 768px)
+		{
+			.text
+			{
+				width: 60px;
+				display: inline-block;
+			}
+			.tabbed
+			{
+				margin-left: 10px;
+				display: inline-block;
+			}
+		}
+		@media screen and (max-width: 768px)
+		{
+			.text
+			{
+				width: 70px;
+				display: inline-block;
+			}
+			.tabbed
+			{
+				margin-left: 5px;
+				display: inline-block;
+			}
+			margin-bottom: 30px;
+		}
+	}
+	
 
-	text-align: left;
+	@media screen and (max-width: 768px)
+	{
+		padding-top: 5px;
+		display: grid;
+		grid-gap: 50px;
+		grid-template-columns: 100%;
+		grid-template-areas:
+				"box1"
+				"box2"
+				"box3";
+	}
+	
+	@media screen and (min-width: 768px)
+	{
+		padding-top: 5px;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 10% 30% 15% 20% 20%;
+		grid-template-areas:
+				"... box1 box2 box3 ...";
+	}
+	
 
 }
 .contact-form{
-
+	margin-top: 20px;
     padding-top: -10px;
     input,
     textarea{

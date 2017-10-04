@@ -184,6 +184,7 @@ header{
 		{
 			width: 50px;
 			margin-left: auto;
+			margin-right: 20px;
 			
 		}
 	}
@@ -193,7 +194,7 @@ header{
 		@media screen and (max-width: 768px) 
 		{
 			position: relative;
-			top: -35px;
+			top: -15px;
 			display: grid;
 			font-weight: bold;
 			grid-template-columns: 100%;
@@ -276,7 +277,7 @@ header{
 			{
 				font-size: 15px;
 				position: relative;
-				top: -9px;
+				top: 5px;
 			}
 		}
 			.logo-container

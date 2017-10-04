@@ -175,7 +175,6 @@ header{
 	.mobile-menu-switch
 	{
 		grid-area: switch;
-		
 		@media screen and (min-width: 768px) 
 		{
 			display: none;
@@ -183,7 +182,9 @@ header{
 
 		@media screen and (max-width: 768px) 
 		{
-
+			width: 50px;
+			margin-left: auto;
+			
 		}
 	}
 
@@ -191,22 +192,22 @@ header{
 	{
 		@media screen and (max-width: 768px) 
 		{
+			position: relative;
+			top: -35px;
 			display: grid;
 			font-weight: bold;
 			grid-template-columns: 100%;
-			grid-template-rows: 30px;
-			grid-gap: 25px;
+			grid-template-rows: 20px;
+			grid-gap: 10px;
 			grid-template-areas:
-				"logo"
-				"...."
 				"...."
 				"msg1"
 				"msg2"
 				"msg3"
 				"msg4"
 				"msg5"
-				"msg6"
-				"....";
+				"msg6";
+		
 			a
 			{
 				font-size: 18px;

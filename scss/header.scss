@@ -28,7 +28,7 @@
 		height: 35px;
 		padding-top: 5px;
 		display: grid;
-		grid-template-columns: 35% 15% 50%;
+		grid-template-columns: 8% 57% 35%;
 		grid-template-areas:
 		" current  .... path";
 		font-size: 17px;
@@ -39,7 +39,7 @@
 		height: 35px;
 		padding-top: 7px;
 		display: grid;
-		grid-template-columns: 20% 40% 45%;
+		grid-template-columns: 10% 62% 28%;
 		grid-template-areas:
 		" current  .... path";
 		font-size: 18px;
@@ -256,8 +256,7 @@ header{
 			a
 			{
 				font-size: 15px;
-				position: relative;
-				top: -9px;
+
 			}
 		}		
 		@media screen and (min-width: 1201px) 
@@ -276,8 +275,7 @@ header{
 			a
 			{
 				font-size: 15px;
-				position: relative;
-				top: 5px;
+
 			}
 		}
 			.logo-container

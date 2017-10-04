@@ -5,7 +5,7 @@
 	
 	@media screen and (min-width: 280px) and (max-width: 768px)
 	{
-		height: 150px;
+		height: 100px;
 	}
 
 	.path
@@ -25,7 +25,7 @@
 
 	@media screen and (min-width: 768px) and (max-width: 999px)
 	{
-		height: 40px;
+		height: 35px;
 		padding-top: 5px;
 		display: grid;
 		grid-template-columns: 35% 15% 50%;
@@ -36,10 +36,10 @@
 
 	@media screen and (min-width: 999px) and (max-width: 1400px)
 	{
-		height: 45px;
+		height: 35px;
 		padding-top: 7px;
 		display: grid;
-		grid-template-columns: 30% 25% 45%;
+		grid-template-columns: 20% 40% 45%;
 		grid-template-areas:
 		" current  .... path";
 		font-size: 18px;
@@ -47,10 +47,10 @@
 
 	@media screen and (min-width: 1400px)
 	{
-		height: 45px;
+		height: 35px;
 		padding-top: 5px;
 		display: grid;
-		grid-template-columns: 15% 60% 25%;
+		grid-template-columns: 15% 55% 30%;
 		grid-template-areas:
 		" current  .... path";
 		font-size: 18px;
@@ -62,29 +62,46 @@
 		grid-template-areas:
 			"current"
 			"path";
-		font-size: 25px;
+		font-size: 18px;
 		grid-gap: 20px;
 	}
 }
 
 header{
-	
 	text-align: center;
 	.header-top-box
 	{
 		background-color: #F1F1F1;
+		color: #333;
 		.template-phone1
 		{
+			
 			grid-area: obj1;
+			i
+			{
+				padding-top: 3px;
+				padding-bottom: 3px;
+				padding-left: 5px;
+				padding-right: 5px;
+				border-radius: 25px;
+			}
 		}
 
 		.template-phone2
 		{
 			grid-area: obj2;
+			i
+			{
+				padding-top: 3px;
+				padding-bottom: 3px;
+				padding-left: 5px;
+				padding-right: 5px;
+				border-radius: 25px;
+			}
 		}
 		@media screen and (min-width: 768px) and (max-width: 999px)
 		{
-			height: 45px;
+			height: 48px;
 			padding-top: 5px;
 			display: grid;
 			grid-template-columns: 50% 10% 40%;
@@ -93,22 +110,22 @@ header{
 			font-size: 18px;
 		}
 		
-		@media screen and (min-width: 999px) and (max-width: 1900px)
+		@media screen and (min-width: 999px) and (max-width: 1400px)
 		{
-			height: 45px;
+			height: 48px;
 			padding-top: 5px;
 			display: grid;
-			grid-template-columns: 40% 30% 30%;
+			grid-template-columns: 35% 35% 30%;
 			grid-template-areas:
 			" obj1  .... obj2";
-			font-size: 18px;
+			font-size: 16px;
 		}
 		@media screen and (min-width: 1400px) 
 		{
-			height: 45px;
+			height: 48px;
 			padding-top: 5px;
 			display: grid;
-			grid-template-columns: 25% 55% 20%;
+			grid-template-columns: 30% 45% 25%;
 			grid-template-areas:
 			" obj1  .... obj2";
 			font-size: 18px;
@@ -122,21 +139,21 @@ header{
 			display: grid;
 			grid-template-columns: 100%;
 			grid-template-areas:
+				"...."
 				"obj1"
-				"obj2";
-			font-size: 25px;
+				"obj2"
+				"...";
+			font-size: 20px;
 			grid-gap: 20px;
 		}
 		.fa-phone
 		{
 			background-color: black;
 			color: yellow;
-			font-size: 30px;
+			font-size: 25px;
 			border: 2px solid;
-			border-radius: 25px;
 			border-color: black;
 		}
-		color: #333;
 	}
 	
 .header-container
@@ -182,6 +199,7 @@ header{
 			grid-template-areas:
 				"logo"
 				"...."
+				"...."
 				"msg1"
 				"msg2"
 				"msg3"
@@ -189,10 +207,9 @@ header{
 				"msg5"
 				"msg6"
 				"....";
-
-			a:hover
+			a
 			{
-				background-color: orange;
+				font-size: 18px;
 			}
 		}
 		
@@ -200,57 +217,65 @@ header{
 		{
 			display: grid;
 			font-weight: bold;
-			grid-template-columns: 50% 50%;
-			grid-template-rows: 30px;
-			grid-gap: 25px;
+			grid-template-columns: 49% 49%;
+			grid-template-rows: 10px;
+			grid-gap: 15px;
 			grid-template-areas:
+				".... ...."
 				"logo logo"
-				".... ...."
-				".... ...."
-				".... ...."
-				".... ...."
-				".... ...."
 				"msg1 msg2"
 				"msg3 msg4"
 				"msg5 msg6"
 				".... ....";
 			.logo-container
 			{
-				width: 96%;
-
+				width: 80%;
+				height: 100px;
+				margin-left: auto;
+				margin-right: auto;
 			}
-			a:hover
+			a
 			{
-				background-color: orange;
+				font-size: 16px;
 			}
 		}
-					
-		@media screen and (min-width: 999px) 
+		@media screen and (min-width: 999px) and (max-width: 1200px) 
 		{
 			margin-top: 15px;
 			margin-bottom: 15px;
 			display: grid;
+			grid-gap: 25px;
 			font-weight: bold;
-			grid-template-columns: 2.4% 15% 10% 10% 10% 10% 10% 10% 10%;
+			grid-template-columns: 25%  10% 10% 10% 10% 10% 10%;
 			grid-template-areas: 
-				".... logo .... msg1 msg2 msg3 msg4 msg5 msg6";
+			"logo  msg1 msg2 msg3 msg4 msg5 msg6";
 			grid-gap: 15px;
-			.logo-container
-			{
-				img
-				{
-					height: 35px;
-				}
-			}
 
 			a
 			{
-				padding-top: 20px;
+				font-size: 15px;
+				position: relative;
+				top: -9px;
 			}
-			
-			a:hover
+		}		
+		@media screen and (min-width: 1201px) 
+		{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			display: grid;
+			grid-gap: 15px;
+			font-weight: bold;
+			grid-template-columns: 35% 10% 10% 10% 10% 10% 10%;
+			grid-template-areas: 
+				"logo msg1 msg2 msg3 msg4 msg5 msg6";
+			grid-gap: 15px;
+
+
+			a
 			{
-				background-color: orange;
+				font-size: 15px;
+				position: relative;
+				top: -9px;
 			}
 		}
 			.logo-container
@@ -260,10 +285,32 @@ header{
 				{
 					margin-left: auto;
 					margin-right: auto;
+					width: 90%;
+				}
+				@media screen and (min-width: 999px) and (max-width: 1200px)
+				{
+					height: 100px;
+					margin-left: 10px;
+				}
+				@media screen and (min-width: 1201px) 
+				{
+					height: 100px;
+					margin-left: 20px;
 				}
 			}
 			.styling
 			{	
+				  transition: 0.2s;
+				  color: orange;
+				  text-decoration: none;
+				  border-right: 2px dotted transparent;
+				  padding: 30px 8px 0 10px;
+				  margin: 0 10px;
+			}
+			.styling:hover
+			{
+				background-color: lightgrey;
+				padding-bottom: 24px;
 			}
 			.msg1
 			{

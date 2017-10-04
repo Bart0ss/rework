@@ -1,6 +1,7 @@
+
 body{
+
     footer{
-        
     .map{
         height: 550px;
     }
@@ -28,21 +29,8 @@ body{
                 .footer-info
 				{
 				
-					@media screen and (min-width: 350px) and (max-width: 420px)
-					{
-						position: relative;
-						left:10px;
-					}
-					@media screen and (min-width: 420px) and (max-width: 600px)
-					{
-						position: relative;
-						left: 15%;
-					}
-					@media screen and (min-width: 600px) and (max-width: 768px)
-					{
-						position: relative;
-						left: 20%;
-					}
+					margin-left: auto;
+					margin-right: auto;
 					
                     text-align: center;
                     padding-top: 50px;

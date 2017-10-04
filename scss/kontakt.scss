@@ -1,4 +1,5 @@
 .contact-content{
+	max-width: 100%;
     margin-top: 50px;
     span{
         text-transform: uppercase;
@@ -21,29 +22,13 @@
 
 .contactinfo
 {
-	@media screen and (min-width: 280px) and (max-width: 350px)
-	{
-		position: relative;
-		left: 20px;
-	}
-	@media screen and (min-width: 350px) and (max-width: 420px)
-	{
-		position: relative;
-		left: 60px;
-	}
-	@media screen and (min-width: 420px) and (max-width: 600px)
-	{
-		position: relative;
-		left: 25%;
-	}
-	@media screen and (min-width: 600px) and (max-width: 768px)
-	{
-		position: relative;
-		left: 30%;
-	}
+	max-width: 100%;
+
+	text-align: left;
+
 }
 .contact-form{
-    max-width: 1070px;
+
     padding-top: -10px;
     input,
     textarea{

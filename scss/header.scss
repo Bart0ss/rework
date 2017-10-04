@@ -247,7 +247,7 @@ header{
 			display: grid;
 			grid-gap: 25px;
 			font-weight: bold;
-			grid-template-columns: 25%  10% 10% 10% 10% 10% 10%;
+			grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
 			grid-template-areas: 
 			"logo  msg1 msg2 msg3 msg4 msg5 msg6";
 			grid-gap: 15px;
@@ -266,7 +266,7 @@ header{
 			display: grid;
 			grid-gap: 15px;
 			font-weight: bold;
-			grid-template-columns: 35% 10% 10% 10% 10% 10% 10%;
+			grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
 			grid-template-areas: 
 				"logo msg1 msg2 msg3 msg4 msg5 msg6";
 			grid-gap: 15px;

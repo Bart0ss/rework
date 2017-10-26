@@ -71,14 +71,120 @@ header{
 	text-align: center;
 	.header-top-box
 	{
+        width: 100%;
+      
 		background-color: #F1F1F1;
 		color: #333;
+        display: inline-block;
+        
+ 
+        
+        @media screen and (min-width: 250px) and (max-width: 650px)
+		{
+            padding-top: 15px;
+            height: 150px;
+
+            .template-phone1
+            {
+                width: 100%;
+            }
+            .blank
+            {
+                display: none;
+            }
+            .template-phone2
+            {
+                margin-top: 15px;
+                width: 100%;
+            }
+		}
+        @media screen and (min-width: 768px) and (max-width: 900px)
+		{
+            height: 50px;
+
+            .template-phone1
+            {
+                float: left;
+                width: 40%;
+            }
+            .blank
+            {
+                float: left;
+                width: 25%;
+            }
+            .template-phone2
+            {
+                float: left;
+                width: 35%;
+            }
+		}
+        @media screen and (min-width: 901px) and (max-width: 1100px)
+		{
+            height: 50px;
+
+            .template-phone1
+            {
+                float: left;
+                width: 33%;
+            }
+            .blank
+            {
+                float: left;
+                width: 37%;
+            }
+            .template-phone2
+            {
+                float: left;
+                width: 27%;
+            }
+		}
+        @media screen and (min-width: 1100px) and (max-width: 1600px)
+		{
+            height: 50px;
+
+            .template-phone1
+            {
+                float: left;
+                width: 26vw;
+            }
+            .blank
+            {
+                float: left;
+                width: 50vw;
+            }
+            .template-phone2
+            {
+                float: left;
+                width: 21vw;
+            }
+		}
+        @media screen and (min-width: 1600px)
+		{
+            height: 50px;
+
+            .template-phone1
+            {
+                float: left;
+                width: 17vw;
+            }
+            .blank
+            {
+                float: left;
+                width: 65vw;
+            }
+            .template-phone2
+            {
+                float: left;
+                width: 15vw;
+            }
+		}
 		.template-phone1
 		{
-			
+            
 			grid-area: obj1;
 			i
 			{
+                margin-top: 5px;
 				padding-top: 3px;
 				padding-bottom: 3px;
 				padding-left: 5px;
@@ -86,12 +192,16 @@ header{
 				border-radius: 25px;
 			}
 		}
+        .blank
+        {
+            color: #F1F1F1;
+        }
 
 		.template-phone2
 		{
-			grid-area: obj2;
 			i
 			{
+                margin-top: 5px;
 				padding-top: 3px;
 				padding-bottom: 3px;
 				padding-left: 5px;
@@ -99,53 +209,7 @@ header{
 				border-radius: 25px;
 			}
 		}
-		@media screen and (min-width: 768px) and (max-width: 999px)
-		{
-			height: 48px;
-			padding-top: 5px;
-			display: grid;
-			grid-template-columns: 47% 13% 40%;
-			grid-template-areas:
-			" obj1  .... obj2";
-			font-size: 18px;
-		}
-		
-		@media screen and (min-width: 999px) and (max-width: 1400px)
-		{
-			height: 48px;
-			padding-top: 5px;
-			display: grid;
-			grid-template-columns: 33% 40% 27%;
-			grid-template-areas:
-			" obj1  .... obj2";
-			font-size: 16px;
-		}
-		@media screen and (min-width: 1400px) 
-		{
-			height: 48px;
-			padding-top: 5px;
-			display: grid;
-			grid-template-columns: 26% 53% 21%;
-			grid-template-areas:
-			" obj1  .... obj2";
-			font-size: 18px;
-		}
-		@media screen and (max-width: 768px) 
-		{
-			.fa-phone
-			{
-				display: none;
-			}
-			display: grid;
-			grid-template-columns: 100%;
-			grid-template-areas:
-				"...."
-				"obj1"
-				"obj2"
-				"...";
-			font-size: 20px;
-			grid-gap: 20px;
-		}
+	
 		.fa-phone
 		{
 			background-color: black;
@@ -302,17 +366,19 @@ header{
 			}
 			.styling
 			{	
-				  transition: 0.2s;
-				  color: orange;
-				  text-decoration: none;
-				  border-right: 2px dotted transparent;
-				  padding: 30px 8px 0 10px;
-				  margin: 0 10px;
+                padding: 30px 8px 0 10px;
+                margin: 0 10px;
+                color: black;
+                  
 			}
 			.styling:hover
 			{
-				background-color: lightgrey;
-				padding-bottom: 24px;
+                border-top-color: black;
+                border-top-width: 3px;
+                border-top-style: solid;
+                border-bottom-color: black;
+                border-bottom-width: 3px;
+                border-bottom-style: solid;
 			}
 			.msg1
 			{

@@ -32,8 +32,6 @@ function core()
 }
 */
 
-
-
 var isShown;
 
 if($( window ).width() >= 769)
@@ -68,8 +66,3 @@ function parse()
 		isShown=false;
 	}
 }
-
-
-
-
-

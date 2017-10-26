@@ -332,12 +332,13 @@ header {
           width: 90%; } }
       @media screen and (min-width: 999px) and (max-width: 1200px) {
         header .header-container .menuitems .logo-container {
-          height: 100px;
+          height: 75px;
           margin-left: 10px; } }
       @media screen and (min-width: 1201px) {
         header .header-container .menuitems .logo-container {
-          height: 100px;
-          margin-left: 20px; } }
+          height: 75px;
+          margin-left: 20px;
+          margin-top: 15px; } }
     header .header-container .menuitems .styling {
       padding: 30px 8px 0 10px;
       margin: 0 10px;
@@ -890,12 +891,13 @@ header {
           width: 90%; } }
       @media screen and (min-width: 999px) and (max-width: 1200px) {
         header .header-container .menuitems .logo-container {
-          height: 100px;
+          height: 75px;
           margin-left: 10px; } }
       @media screen and (min-width: 1201px) {
         header .header-container .menuitems .logo-container {
-          height: 100px;
-          margin-left: 20px; } }
+          height: 75px;
+          margin-left: 20px;
+          margin-top: 15px; } }
     header .header-container .menuitems .styling {
       padding: 30px 8px 0 10px;
       margin: 0 10px;

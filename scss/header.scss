@@ -355,13 +355,14 @@ header{
 				}
 				@media screen and (min-width: 999px) and (max-width: 1200px)
 				{
-					height: 100px;
+					height: 75px;
 					margin-left: 10px;
 				}
 				@media screen and (min-width: 1201px) 
 				{
-					height: 100px;
+					height: 75px;
 					margin-left: 20px;
+                    margin-top: 15px;
 				}
 			}
 			.styling

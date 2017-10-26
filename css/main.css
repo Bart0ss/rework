@@ -342,13 +342,14 @@ header {
       padding: 30px 8px 0 10px;
       margin: 0 10px;
       color: black; }
-    header .header-container .menuitems .styling:hover {
-      border-top-color: black;
-      border-top-width: 3px;
-      border-top-style: solid;
-      border-bottom-color: black;
-      border-bottom-width: 3px;
-      border-bottom-style: solid; }
+    @media screen and (min-width: 1000px) {
+      header .header-container .menuitems .styling:hover {
+        border-top-color: black;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-bottom-color: black;
+        border-bottom-width: 3px;
+        border-bottom-style: solid; } }
     header .header-container .menuitems .msg1 {
       grid-area: msg1; }
     header .header-container .menuitems .msg2 {
@@ -899,13 +900,14 @@ header {
       padding: 30px 8px 0 10px;
       margin: 0 10px;
       color: black; }
-    header .header-container .menuitems .styling:hover {
-      border-top-color: black;
-      border-top-width: 3px;
-      border-top-style: solid;
-      border-bottom-color: black;
-      border-bottom-width: 3px;
-      border-bottom-style: solid; }
+    @media screen and (min-width: 1000px) {
+      header .header-container .menuitems .styling:hover {
+        border-top-color: black;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-bottom-color: black;
+        border-bottom-width: 3px;
+        border-bottom-style: solid; } }
     header .header-container .menuitems .msg1 {
       grid-area: msg1; }
     header .header-container .menuitems .msg2 {

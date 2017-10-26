@@ -373,12 +373,15 @@ header{
 			}
 			.styling:hover
 			{
-                border-top-color: black;
-                border-top-width: 3px;
-                border-top-style: solid;
-                border-bottom-color: black;
-                border-bottom-width: 3px;
-                border-bottom-style: solid;
+                @media screen and (min-width: 1000px) 
+				{
+                    border-top-color: black;
+                    border-top-width: 3px;
+                    border-top-style: solid;
+                    border-bottom-color: black;
+                    border-bottom-width: 3px;
+                    border-bottom-style: solid;
+                }
 			}
 			.msg1
 			{

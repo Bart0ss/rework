@@ -27,10 +27,27 @@
 	#box1
 	{
 		grid-area: box1;
+        @media screen and (min-width: 768px)
+	    {
+            .email
+            {
+                margin-top: 10px;   
+                font-size: 30px;
+            }
+        }
 	}
 	#box2
 	{
 		grid-area: box2;
+        @media screen and (min-width: 768px)
+	    {
+            .map
+            {
+                margin-top: 10px;   
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
 	}
 	#box3
 	{
@@ -47,6 +64,12 @@
 				margin-left: 10px;
 				display: inline-block;
 			}
+            .zegar
+            {
+                margin-top: 10px;   
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
 		}
 		@media screen and (max-width: 768px)
 		{
